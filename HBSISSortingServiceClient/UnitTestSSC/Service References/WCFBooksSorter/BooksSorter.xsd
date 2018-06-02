@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/EntitySSC" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EntitySSC" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:2824/BooksSorter.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/EntitySSC.Enumerators" />
+  <xs:complexType name="ArrayOfBooksOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BooksOrder" nillable="true" type="tns:BooksOrder" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBooksOrder" nillable="true" type="tns:ArrayOfBooksOrder" />
+  <xs:complexType name="BooksOrder">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/EntitySSC.Enumerators" minOccurs="0" name="DirectionType" type="q1:DirectionEnum" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/EntitySSC.Enumerators" minOccurs="0" name="OrderType" type="q2:OrderEnum" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BooksOrder" nillable="true" type="tns:BooksOrder" />
+  <xs:complexType name="ArrayOfBook">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Book" nillable="true" type="tns:Book" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBook" nillable="true" type="tns:ArrayOfBook" />
+  <xs:complexType name="Book">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Author" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EditionYear" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Book" nillable="true" type="tns:Book" />
+</xs:schema>

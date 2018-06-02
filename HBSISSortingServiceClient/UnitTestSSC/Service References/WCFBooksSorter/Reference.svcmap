@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b2f723fb-d10f-462c-a806-9b40bff4d0d7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2824/BooksSorter.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BooksSorter.disco" MetadataType="Disco" ID="ea6054a7-bb5b-4602-9dc8-e11ac5d35949" SourceId="1" SourceUrl="http://localhost:2824/BooksSorter.svc?disco" />
+    <MetadataFile FileName="BooksSorter.wsdl" MetadataType="Wsdl" ID="95e6e44a-62eb-46b7-a5a9-5756d8d8b872" SourceId="1" SourceUrl="http://localhost:2824/BooksSorter.svc?wsdl" />
+    <MetadataFile FileName="BooksSorter.xsd" MetadataType="Schema" ID="59282da6-bc00-417a-846b-75cb0e5590ab" SourceId="1" SourceUrl="http://localhost:2824/BooksSorter.svc?xsd=xsd2" />
+    <MetadataFile FileName="BooksSorter1.xsd" MetadataType="Schema" ID="928dc9e8-118f-4459-bed1-9cdf4c6f2b19" SourceId="1" SourceUrl="http://localhost:2824/BooksSorter.svc?xsd=xsd3" />
+    <MetadataFile FileName="BooksSorter2.xsd" MetadataType="Schema" ID="38d2b2ed-5481-4a53-bbcc-226b5caa364f" SourceId="1" SourceUrl="http://localhost:2824/BooksSorter.svc?xsd=xsd0" />
+    <MetadataFile FileName="BooksSorter3.xsd" MetadataType="Schema" ID="fb6ab330-1ac2-4d25-936f-aaf1cfe76409" SourceId="1" SourceUrl="http://localhost:2824/BooksSorter.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
